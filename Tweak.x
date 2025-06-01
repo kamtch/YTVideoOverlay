@@ -68,7 +68,6 @@ static void setDefaultTextStyle(YTQTMButton *button) {
         : [defaultTypeStyle fontOfSize:9.5 weight:UIFontWeightSemibold];
     button.titleLabel.font = font;
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [button yt_setWidth:OVERLAY_BUTTON_SIZE];
 }
 
 static YTQTMButton *createButtonTop(BOOL isText, YTMainAppControlsOverlayView *self, NSString *buttonId, NSString *accessibilityLabel, SEL selector) {
