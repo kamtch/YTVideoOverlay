@@ -62,7 +62,6 @@ static NSMutableArray *topControls(YTMainAppControlsOverlayView *self, NSMutable
 }
 
 static void setDefaultTextStyle(YTQTMButton *button) {
-    button.customTitleColor = [%c(YTColor) white1];
     YTDefaultTypeStyle *defaultTypeStyle = [%c(YTTypeStyle) defaultTypeStyle];
     UIFont *font = [defaultTypeStyle respondsToSelector:@selector(ytSansFontOfSize:weight:)]
         ? [defaultTypeStyle ytSansFontOfSize:10 weight:UIFontWeightSemibold]
